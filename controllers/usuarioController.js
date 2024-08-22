@@ -10,4 +10,10 @@ const formularioRegistro = (req, res) => {
   });
 };
 
-export { formularioLogin, formularioRegistro };
+const formularioForgetPassword = (req, res) => {
+  res.render("auth/forgetPassword", {
+    pagina: "Recuperar acceso a tu cuenta",
+  });
+};
+
+export { formularioLogin, formularioRegistro, formularioForgetPassword };
